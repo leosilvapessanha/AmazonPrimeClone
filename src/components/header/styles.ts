@@ -39,23 +39,11 @@ export const SearchBar = styled.div`
   margin-left: auto;
   align-items: center;
   color: #8197a4;
-  input {
-    border: 1px solid;
-    border-color: #4d5c67;
-    background-color: transparent;
-    height: 2rem;
-  }
+  font-size: 15px;
+  font-family: 'Fira Sans', sans-serif;
+
   img {
     width: 2rem;
     height: 2rem;
-  }
-  padding: 0;
-  button {
-    color: #f2f4f6b3;
-    background-color: transparent;
-    border: 0;
-    &:hover {
-      color: ${shade(0.2, '#fff')};
-    }
   }
 `;

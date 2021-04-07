@@ -1,10 +1,12 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
+import { CgSearch } from 'react-icons/cg';
 import Logo from '../../assets/primeLogo.svg';
 
 import Avatar from '../../assets/avatar.png';
 
 import * as S from './styles';
+import Input from '../input';
 
 const Header: React.FC = () => {
   return (
@@ -30,9 +32,14 @@ const Header: React.FC = () => {
           {/* </Link> */}
         </S.Nav>
         <S.SearchBar>
-          <input type="text" placeholder="Busca" />
-          <img src={Avatar} alt="Amazon Prime Video" />
-          <button type="button">Name</button>
+          <Input
+            type="text"
+            name="search"
+            icon={CgSearch}
+            placeholder="Busca"
+          />
+          <img src={Avatar} alt="User" />
+          Name
         </S.SearchBar>
       </S.Container>
     </>
