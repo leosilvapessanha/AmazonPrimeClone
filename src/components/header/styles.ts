@@ -6,6 +6,7 @@ export const Container = styled.div`
   flex-direction: row;
   background: #18222d;
   height: 5rem;
+  padding: 0 2rem 0 0;
   img {
     align-items: center;
     width: 7rem;
@@ -27,6 +28,34 @@ export const Nav = styled.ul`
     margin: 0 1rem 0 0;
     &:hover {
       color: ${shade(0.2, '#f4f4f4')};
+    }
+  }
+`;
+
+export const SearchBar = styled.div`
+  display: flex;
+  flex-direction: row;
+  background: transparent;
+  margin-left: auto;
+  align-items: center;
+  color: #8197a4;
+  input {
+    border: 1px solid;
+    border-color: #4d5c67;
+    background-color: transparent;
+    height: 2rem;
+  }
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+  padding: 0;
+  button {
+    color: #f2f4f6b3;
+    background-color: transparent;
+    border: 0;
+    &:hover {
+      color: ${shade(0.2, '#fff')};
     }
   }
 `;

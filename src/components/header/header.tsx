@@ -2,6 +2,8 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 import Logo from '../../assets/primeLogo.svg';
 
+import Avatar from '../../assets/avatar.png';
+
 import * as S from './styles';
 
 const Header: React.FC = () => {
@@ -9,9 +11,10 @@ const Header: React.FC = () => {
     <>
       <S.Container>
         <img src={Logo} alt="Amazon Prime Video" />
+
         <S.Nav>
           {/* <Link to="/"> */}
-          <li>inicio</li>
+          <li>Início</li>
           {/* </Link> */}
           {/* <Link to="/"> */}
           <li>Séries</li>
@@ -26,6 +29,11 @@ const Header: React.FC = () => {
           <li>Canais</li>
           {/* </Link> */}
         </S.Nav>
+        <S.SearchBar>
+          <input type="text" placeholder="Busca" />
+          <img src={Avatar} alt="Amazon Prime Video" />
+          <button type="button">Name</button>
+        </S.SearchBar>
       </S.Container>
     </>
   );
