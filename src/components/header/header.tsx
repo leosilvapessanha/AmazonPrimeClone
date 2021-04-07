@@ -39,7 +39,7 @@ const Header: React.FC = () => {
             placeholder="Busca"
           />
           <img src={Avatar} alt="User" />
-          Name
+          Leona...
         </S.SearchBar>
       </S.Container>
     </>

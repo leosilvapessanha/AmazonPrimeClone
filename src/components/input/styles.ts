@@ -9,16 +9,31 @@ export const Container = styled.div`
   height: 2.5rem;
   width: 15.625rem;
   padding: 0.5rem;
+  transition: 300ms;
 
   input {
     padding: 0.5rem;
     border: none;
+    border-radius: 1rem;
     background: transparent;
-    &::placeholder {
-      background-color: #18222d;
-      color: #8197a4;
-      font-size: 17px;
-      font-family: 'Fira Sans', sans-serif;
-    }
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  &::placeholder {
+    background-color: transparent;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  @media (max-width: 1040px) {
+    display: none;
   }
 `;

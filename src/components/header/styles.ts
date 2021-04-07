@@ -41,8 +41,10 @@ export const SearchBar = styled.div`
   color: #8197a4;
   font-size: 15px;
   font-family: 'Fira Sans', sans-serif;
+  padding-right: 4rem;
 
   img {
+    margin: 0 1rem 0 1.5rem;
     width: 2rem;
     height: 2rem;
   }
