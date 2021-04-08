@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import { CgSearch } from 'react-icons/cg';
+import { FaCaretDown } from 'react-icons/fa';
 import Logo from '../../assets/primeLogo.svg';
 
 import Avatar from '../../assets/avatar.png';
@@ -13,7 +14,7 @@ const Header: React.FC = () => {
     <>
       <S.Container>
         <img src={Logo} alt="Amazon Prime Video" />
-
+        <button type="button">explorar</button>
         <S.Nav>
           {/* <Link to="/"> */}
           <li>Início</li>
@@ -39,7 +40,10 @@ const Header: React.FC = () => {
             placeholder="Busca"
           />
           <img src={Avatar} alt="User" />
-          Leona...
+          <button type="button">
+            Leona...
+            <FaCaretDown height={17} margin-left={8} color="#B1B5BA" />
+          </button>
         </S.SearchBar>
       </S.Container>
     </>

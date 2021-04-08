@@ -37,3 +37,22 @@ export const Container = styled.div`
     display: none;
   }
 `;
+
+export const Alternative = styled.div`
+  display: none;
+  align-items: center;
+  border: 0px solid;
+  border-color: #4d5c67;
+  background-color: #18222d;
+  height: 2.5rem;
+  padding: 0.5rem;
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  @media (max-width: 1040px) {
+    display: flex;
+  }
+`;

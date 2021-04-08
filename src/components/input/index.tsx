@@ -9,9 +9,12 @@ interface IinputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 const Input: React.FC<IinputProps> = ({ icon: Icon, ...rest }) => (
-  <S.Container>
-    {Icon && <Icon size={17} />}
-    <input {...rest} />
-  </S.Container>
+  <>
+    <S.Container>
+      {Icon && <Icon size={17} />}
+      <input {...rest} />
+    </S.Container>
+    <S.Alternative>{Icon && <Icon size={17} />}</S.Alternative>
+  </>
 );
 export default Input;
